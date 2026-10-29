@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria BTS</title>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <h1>⋅˚₊‧<strong>⊙⊝⊜</strong>⁷‧₊Galeria BTS˚ ⋅</h1>
+        <p>Clique em uma imagem para ampliar</p>
+    </header>
+
+    <nav class="filtros">
+        <button class="filtro ativo" data-filtro="todos">Todos</button>
+        <button class="filtro" data-filtro="vocalLine">Vocal Line</button>
+        <button class="filtro" data-filtro="rapLine">Rap Line</button>
+        <button class="filtro" data-filtro="visualLine">Visual Line</button>
+    </nav>
+
+    <p id="totalImagens" class="total"></p>
+
+    <main class="galeria">
+        <img src="./img/foto1.png" 
+        alt="Foto do Grupo BTS" 
+        class="miniatura destaque" 
+        data-descricao="Grupo BTS (Bangtan Sonyeondan) criado em 13 de Junho de 2013 com 7 membros, Kim Namjoon, Kim Seokjin, Min Yoongi, Jung Hoseok, Park Jimin, Kim Taehyung e Jeon Jungkook."
+        tabindex="0">
+
+        <img src="./img/foto2.png" 
+        alt="Jung Hoseok" 
+        class="miniatura horizontal" 
+        data-categoria="rapLine"
+        data-descricao="Cantor Jung Hoseok, também conhecido como J-Hope." 
+        tabindex="0">
+
+        <img src="./img/foto3.png" 
+        alt="Kim Namjoon" 
+        class="miniatura"  
+        data-categoria="rapLine"
+        data-descricao="Cantor Kim Namjoon, também conhecido como RM (Rap Monster)."
+        tabindex = "0">
+
+        <img src="./img/foto4.png" 
+        alt="Jeon Jungkook" 
+        class="miniatura vertical"  
+        data-categoria="visualLine vocalLine"
+        data-descricao="Cantor Jeon Jungkook, é considerado o Golden Maknae do K-Pop."
+        tabindex = "0">
+
+        <img src="./img/foto5.png" 
+        alt="Park Jimin" 
+        class="miniatura" 
+        data-categoria="vocalLine visualLine"
+        data-descricao="Cantor Park Jimin, dançarino de dança contemporânea."
+        tabindex = "0">
+
+        <img src="./img/foto6.png" 
+        alt="Kim Taehyung" 
+        class="miniatura horizontal"  
+        data-categoria="vocalLine visualLine rapLine"
+        data-descricao="Cantor Kim Taehyung, considerado o homem mais bonito do mundo pela Nubia Magazine"
+        tabindex = "0">
+        
+        <img src="./img/foto7.png" 
+        alt="Kim Seokjin" 
+        class="miniatura" 
+        data-categoria="vocalLine visualLine" 
+        data-descricao="Cantor Kim Seokjin, o rosto mais simétrico do grupo."
+        tabindex = "0">
+
+        <img src="./img/foto8.png" 
+        alt="Min Yoongi" 
+        class="miniatura"  
+        data-categoria="rapLine" 
+        data-descricao="Cantor Min Yoongi, também conhecido como Suga ou Agust-D."
+        tabindex = "0">
+
+        <img src="./img/foto9.png" 
+        alt="Foto do Grupo BTS" 
+        class="miniatura horizontal" 
+        data-descricao="Foto do grupo BTS na abertura da copa de 2026."
+        tabindex = "0">
+
+
+    <div id="modal" class="modal">
+        <button id="fechar" class="fechar">
+            &times
+        </button>
+        
+        <button id="anterior" class="navegacao anterior">
+            &#10094
+        </button>
+
+        <div class="modal-conteudo">
+            <img src="" alt="" id="imagemModal">
+            <div class="legenda">
+                <span id="contador"></span>
+                <span id="nomeImagem"></span>
+            </div>
+        </div>
+
+        <button id="proximo" class="navegacao proximo" aria-label="Proxima Imagem">
+            &#10095
+        </button>
+    </div> 
+    <script src="script.js"></script> 
+</body>
+</html>
