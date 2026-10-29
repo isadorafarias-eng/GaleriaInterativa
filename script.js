@@ -60,25 +60,22 @@ botoes.forEach(function (botao) {
     });
 });
 
-
-
 function mostrarFoto(indice) {
     const quantidade = fotosVisiveis.length;
     if (quantidade === 0) return;
-
     indiceAtual = (indice + quantidade) % quantidade;
     const foto = fotosVisiveis[indiceAtual];
-
     const modalConteudo = document.querySelector(".modal-conteudo");
-
-
     modalConteudo.style.width = "auto";
 
     imagemModal.src = foto.src;
     imagemModal.alt = foto.alt;
 
     imagemModal.onload = function () {
-        modalConteudo.style.width = imagemModal.clientWidth + "px";
+        const larguraImagem = imagemModal.clientWidth;
+        const larguraMaxTela = window.innerWidth * 0.9;
+        
+        modalConteudo.style.width = Math.min(larguraImagem, larguraMaxTela) + "px";
     };
 
     if (nomeImagem) {
@@ -89,7 +86,6 @@ function mostrarFoto(indice) {
         contador.textContent = (indiceAtual + 1) + " de " + quantidade;
     }
 }
-
 function abrirModal(foto) {
     indiceAtual = fotosVisiveis.indexOf(foto);
     if (indiceAtual !== -1) {
