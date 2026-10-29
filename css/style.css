@@ -163,13 +163,6 @@ header strong {
     box-sizing: border-box;
 }
 
-#nomeImagem {
-    flex: 1;
-    text-align: left;
-    font-weight: 400;
-    color: #ececec;
-}
-
 #contador {
     font-weight: bold;
     color: #b40202;
