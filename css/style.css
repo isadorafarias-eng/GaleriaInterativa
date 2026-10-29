@@ -62,7 +62,6 @@ header strong {
     margin-bottom: 25px;
 }
 
-/* Galeria Base */
 .galeria {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
