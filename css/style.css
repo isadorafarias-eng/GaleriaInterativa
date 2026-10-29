@@ -88,7 +88,6 @@ header strong {
     box-shadow: 0 8px 15px #1c0000aa;
 }
 
-/* Layout Misto (Apenas quando "Todos" está ativo) */
 .destaque {
     grid-column: span 2;
     grid-row: span 2;
@@ -103,7 +102,7 @@ header strong {
     grid-row: span 2;
 }
 
-/* Quando filtra por seção/categoria, todas as fotos passam a ter exatamente o mesmo tamanho */
+
 .galeria.uniforme .destaque,
 .galeria.uniforme .horizontal,
 .galeria.uniforme .vertical {
@@ -115,7 +114,6 @@ header strong {
     display: none;
 }
 
-/* Modal */
 .modal {
     display: none;
     position: fixed;
