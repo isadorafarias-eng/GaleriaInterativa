@@ -34,7 +34,6 @@ function filtrarImagens(categoria) {
     fotos.forEach(function (foto) {
         const catFoto = foto.dataset.categoria || "";
 
-        // Se for "todos", mostra todas. Caso contrário, busca a categoria selecionada
         if (categoria === "todos" || catFoto.includes(categoria)) {
             foto.classList.remove("oculta");
         } else {
@@ -42,7 +41,7 @@ function filtrarImagens(categoria) {
         }
     });
 
-    // Quando filtra por categoria, ativa a classe que força o tamanho uniforme das fotos na galeria
+   
     if (categoria === "todos") {
         galeria.classList.remove("uniforme");
     } else {
@@ -74,7 +73,7 @@ function mostrarFoto(indice) {
 
     const modalConteudo = document.querySelector(".modal-conteudo");
 
-    // Limpa a largura para a nova imagem calcular o seu tamanho real
+
     modalConteudo.style.width = "auto";
 
     imagemModal.src = foto.src;
