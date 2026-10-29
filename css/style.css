@@ -11,9 +11,6 @@ body {
     min-height: 100vh;
 }
 
-/* ===================================
-   HEADER & FILTROS
-   =================================== */
 header {
     text-align: center;
     padding: 40px 20px 25px;
@@ -49,9 +46,17 @@ header strong, #contador {
     transition: background-color 0.2s, color 0.2s;
 }
 
-.filtro:hover, .filtro.ativo { color: #d4d4d4; }
-.filtro:hover { background-color: #340303; }
-.filtro.ativo { background-color: #3e0000; }
+.filtro:hover, .filtro.ativo{ 
+    color: #d4d4d4; 
+}
+
+.filtro:hover { 
+    background-color: #340303; 
+}
+
+.filtro.ativo { 
+    background-color: #3e0000; 
+}
 
 .total {
     text-align: center;
@@ -59,9 +64,6 @@ header strong, #contador {
     margin-bottom: 25px;
 }
 
-/* ===================================
-   GALERIA
-   =================================== */
 .galeria {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -88,9 +90,17 @@ header strong, #contador {
     box-shadow: 0 8px 15px #1c0000aa;
 }
 
-.destaque { grid-column: span 2; grid-row: span 2; }
-.horizontal { grid-column: span 2; }
-.vertical { grid-row: span 2; }
+.destaque { 
+    grid-column: span 2; grid-row: span 2; 
+}
+
+.horizontal { 
+    grid-column: span 2; 
+}
+
+.vertical { 
+    grid-row: span 2; 
+}
 
 .galeria.uniforme .destaque,
 .galeria.uniforme .horizontal,
@@ -99,11 +109,10 @@ header strong, #contador {
     grid-row: span 1;
 }
 
-.miniatura.oculta { display: none; }
+.miniatura.oculta {
+     display: none; 
+}
 
-/* ===================================
-   MODAL
-   =================================== */
 .modal {
     display: none;
     position: fixed;
@@ -115,7 +124,9 @@ header strong, #contador {
     padding: 60px 70px;
 }
 
-.modal.ativo { display: flex; }
+.modal.ativo { 
+    display: flex; 
+}
 
 .modal-conteudo {
     position: relative;
@@ -148,7 +159,9 @@ header strong, #contador {
     font-size: 14px;
 }
 
-#contador { font-weight: bold; white-space: nowrap; }
+#contador { 
+    font-weight: bold; white-space: nowrap; 
+}
 
 .fechar {
     position: absolute;
@@ -162,7 +175,9 @@ header strong, #contador {
     z-index: 1001;
 }
 
-.fechar:hover { color: rgb(230, 0, 0); }
+.fechar:hover { 
+    color: rgb(230, 0, 0); 
+}
 
 .navegacao {
     position: absolute;
@@ -191,15 +206,27 @@ header strong, #contador {
         grid-template-columns: repeat(2, 1fr);
         grid-auto-rows: 220px;
     }
-    .modal { padding: 40px 20px; }
-    .navegacao { padding: 8px 12px; font-size: 16px; }
-    .anterior { left: 5px; }
-    .proximo { right: 5px; }
+    .modal { 
+        padding: 40px 20px; 
+    }
+    .navegacao { 
+        padding: 8px 12px; font-size: 16px; 
+    }
+    .anterior { 
+        left: 5px; 
+    }
+    .proximo { 
+        right: 5px; 
+    }
 }
 
 @media (max-width: 520px) {
-    header h1 { font-size: 24px; }
-    .filtros { gap: 8px; padding: 8px 10px; }
+    header h1 { 
+        font-size: 24px; 
+    }
+    .filtros { 
+        gap: 8px; padding: 8px 10px; 
+    }
     .filtro {
         padding: 8px 14px;
         font-size: 13px;
@@ -215,8 +242,12 @@ header strong, #contador {
         grid-column: span 1 !important;
         grid-row: span 1 !important;
     }
-    .modal-conteudo { max-width: 95vw; max-height: 80vh; }
-    .modal-conteudo img { max-height: 55vh; }
+    .modal-conteudo { 
+        max-width: 95vw; max-height: 80vh; 
+    }
+    .modal-conteudo img { 
+        max-height: 55vh; 
+    }
     .legenda {
         flex-direction: column;
         align-items: flex-start;
@@ -224,5 +255,7 @@ header strong, #contador {
         font-size: 12px;
         padding: 8px 12px;
     }
-    .fechar { top: 10px; right: 15px; font-size: 32px; }
+    .fechar { 
+        top: 10px; right: 15px; font-size: 32px; 
+    }
 }
