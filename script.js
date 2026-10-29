@@ -14,8 +14,6 @@ const contador = document.getElementById("contador");
 let fotosVisiveis = [];
 let indiceAtual = 0;
 
-// ---------- Filtro ----------
-
 function atualizarVisiveis() {
     fotosVisiveis = [];
 
@@ -62,7 +60,7 @@ botoes.forEach(function (botao) {
     });
 });
 
-// ---------- Modal ----------
+
 
 function mostrarFoto(indice) {
     const quantidade = fotosVisiveis.length;
